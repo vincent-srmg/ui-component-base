@@ -219,3 +219,9 @@ export {
   TooltipContent,
   TooltipProvider,
 } from "./components/tooltip";
+
+
+// ImagePlacholder
+export {
+  ImagePlaceholder
+} from "./components/image-placeholder";

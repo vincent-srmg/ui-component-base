@@ -1,12 +1,10 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
- 
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  safelist:[
-    'dark'
-  ],
+  safelist: ["dark"],
   theme: {
     container: {
       center: true,
@@ -16,6 +14,22 @@ module.exports = {
       },
     },
     extend: {
+      spacing: {
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "24px",
+        1: "4px",
+        2: "8px",
+        3: "16px",
+        4: "24px",
+        5: "32px",
+        6: "40px",
+        7: "48px",
+        8: "56px",
+        9: "64x",
+        10: "80px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -76,4 +90,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
